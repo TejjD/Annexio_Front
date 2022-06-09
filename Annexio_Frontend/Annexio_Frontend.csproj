@@ -4,10 +4,12 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
+      <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
     </ItemGroup>
 
 </Project>

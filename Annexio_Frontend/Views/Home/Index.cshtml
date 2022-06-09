@@ -1,6 +1,8 @@
 ﻿@using Annexio_Assessment.Models;
 @using Annexio_Frontend.Controllers;
 @using Microsoft.VisualBasic;
+@using PagedList;
+
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -17,7 +19,8 @@
             Countries List
         </div>
         <div class="panel-body accordion" id="accordionExample">
-            <table class="table table-condensed table-striped">
+            <input type="text" id="search" placeholder="Type to search">
+            <table class="table table-condensed table-striped" id="table">
                 <thead>
                 <tr>
                     <th>Country</th>
@@ -209,7 +212,32 @@
                 }
                 </tbody>
             </table>
+            @if (ViewBag.Page > 0)
+            {
+                <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })" 
+                   class="btn btn-default">
+                    &laquo; Prev
+                </a>
+            }
+            @if (ViewBag.Page < ViewBag.MaxPage)
+            {
+                <a href="@Url.Action("Index", new { page = ViewBag.Page + 1 })" 
+                   class="btn btn-default">
+                    Next &raquo;
+                </a>
+            }
         </div>
     </div>
 </div>
 </div>
+<script>
+var $rows = $('#table tr');
+$('#search').keyup(function() {
+    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+    
+    $rows.show().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return !~text.indexOf(val);
+    }).hide();
+});
+</script>

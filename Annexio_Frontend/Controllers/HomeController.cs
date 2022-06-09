@@ -2,6 +2,8 @@
 using Annexio_Assessment.Models;
 using Microsoft.AspNetCore.Mvc;
 using Annexio_Frontend.Models;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using PagedList.Mvc;
 
 namespace Annexio_Frontend.Controllers;
 
@@ -18,7 +20,7 @@ public class HomeController : Controller
     private static Dictionary<string, Int64> SubRegionPopulationDictionary;
     private static Dictionary<string, List<string>> SubRegionDictionary;
     private static Dictionary<string, List<string>> SubRegionCountriesDictionary;
-
+    
     public static List<string>? GetCountriesForRegion(string region)
     {
         return RegionDictionary?[region];
@@ -112,9 +114,22 @@ public class HomeController : Controller
         }
     }
 
-    public IActionResult Index()
+    public IActionResult Index(int page = 0)
     {
-        if (CountriesList != null) ViewBag.countriesList = CountriesList;
+        if (CountriesList == null) return View();
+        const int pageSize = 15; // you can always do something more elegant to set this
+        var orderedEnumerable = CountriesList.OrderBy(o => o.name);
+
+        var count = orderedEnumerable.Count();
+
+        var data = orderedEnumerable.Skip(page * pageSize).Take(pageSize).ToList();
+
+        ViewBag.MaxPage = (count / pageSize) - (count % pageSize == 0 ? 1 : 0);
+        ViewBag.Page = page;
+        ViewBag.countriesList = CountriesList;
+        //Uncomment to use Pagination
+        //ViewBag.countriesList = data;
+        
         return View();
     }
 
