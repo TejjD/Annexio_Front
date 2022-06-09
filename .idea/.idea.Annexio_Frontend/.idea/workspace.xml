@@ -8,10 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Annexio_Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Annexio_Frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Views/Home/Index.cshtml" afterDir="false" />
+    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment=" * added todo for pagination">
+      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d5748c679a9c5e0f3c668e83aa736a76b33127d87d4586e395ed1fafdf5ebf7/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3981d658666ec9cc1e6958fe22f8614bfe02ccb6625b056c3ece3729c9262/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ffea6f83bf29165322fb63c1d35e54887e9f15a29fce9599825b0a4be39d51b/JsonSerializerInternalReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/tejas/Documents/Annexio_Frontend/Annexio_Frontend/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/tejas/Documents/Annexio_Frontend/Annexio_Frontend/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -122,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654712761456</updated>
-      <workItem from="1654712784854" duration="47055000" />
+      <workItem from="1654712784854" duration="47813000" />
     </task>
     <task id="LOCAL-00001" summary="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements">
       <created>1654783127737</created>
@@ -145,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654797311676</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" * added todo for pagination">
+      <created>1654797744797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654797744797</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +175,8 @@
     <MESSAGE value="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements" />
     <MESSAGE value="* updated controller to add internal jump to elements&#10;* added scrolling between objects in table" />
     <MESSAGE value="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)" />
-    <option name="LAST_COMMIT_MESSAGE" value="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)" />
+    <MESSAGE value=" * added todo for pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value=" * added todo for pagination" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
