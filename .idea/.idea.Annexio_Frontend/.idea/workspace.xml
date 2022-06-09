@@ -8,18 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment="* updated controller to add internal jump to elements&#10;* added scrolling between objects in table">
+    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Annexio_Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Annexio_Frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Annexio_Frontend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Annexio_Frontend.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/Annexio_Frontend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/Annexio_Frontend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654712761456</updated>
-      <workItem from="1654712784854" duration="46451000" />
+      <workItem from="1654712784854" duration="47055000" />
     </task>
     <task id="LOCAL-00001" summary="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements">
       <created>1654783127737</created>
@@ -146,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654791712871</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)">
+      <created>1654797311676</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654797311676</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +168,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements" />
     <MESSAGE value="* updated controller to add internal jump to elements&#10;* added scrolling between objects in table" />
-    <option name="LAST_COMMIT_MESSAGE" value="* updated controller to add internal jump to elements&#10;* added scrolling between objects in table" />
+    <MESSAGE value="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)" />
+    <option name="LAST_COMMIT_MESSAGE" value="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
