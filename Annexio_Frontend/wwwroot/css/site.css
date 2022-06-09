@@ -5,6 +5,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   position: relative;
   min-height: 100%;
   font-size: 14px;

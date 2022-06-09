@@ -33,7 +33,7 @@ public class HomeController : Controller
     {
         return RegionPopulationDictionary?[region];
     }
-    
+
     public static Int64? GetSubRegionPopulation(string region)
     {
         return SubRegionPopulationDictionary?[region];
@@ -42,6 +42,12 @@ public class HomeController : Controller
     public static List<string>? GetCountrySubRegionsForRegion(string subregion)
     {
         return SubRegionCountriesDictionary?[subregion];
+    }
+
+    public static string? GetCountryAlphaCode(string countryName)
+    {
+        var alp = (from country in CountriesList where country.name == countryName select country.alpha3Code).ToList();
+        return alp[0];
     }
 
     public HomeController(ILogger<HomeController> logger)
@@ -72,10 +78,10 @@ public class HomeController : Controller
             var countriesList = (from country in CountriesList where country.subregion == subregion select country.name)
                 .ToList();
             SubRegionCountriesDictionary[subregion] = countriesList;
-            
+
             var subRegionPopulationTotal =
                 (from country in CountriesList where country.subregion == subregion select country.population);
-            
+
             Int64 popTotal = 0;
             foreach (var pop in subRegionPopulationTotal)
             {

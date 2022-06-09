@@ -8,25 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Annexio_Frontend/Models/Country.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Annexio_Frontend/Models/Currency.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Annexio_Frontend/Models/Flags.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Annexio_Frontend/Models/Language.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Annexio_Frontend/Models/RegionalBloc.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Annexio_Frontend/Models/Translations.cs" afterDir="false" />
+    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Annexio_Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Annexio_Frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Annexio_Frontend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Annexio_Frontend.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/Annexio_Frontend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/Annexio_Frontend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/Annexio_Frontend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/Annexio_Frontend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/Debug/net7.0/Annexio_Frontend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Annexio_Frontend/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +20,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -125,8 +122,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654712761456</updated>
-      <workItem from="1654712784854" duration="33272000" />
+      <workItem from="1654712784854" duration="40981000" />
     </task>
+    <task id="LOCAL-00001" summary="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements">
+      <created>1654783127737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654783127737</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,27 +152,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#Annexio_Frontend.Controllers.HomeController.GetCountries" memberName="regions" />
         <PinnedItemInfo parentTag="Type#Annexio_Assessment.Models.Currency" memberName="code" />
+        <PinnedItemInfo parentTag="Frame#Annexio_Frontend.Controllers.HomeController.GetCountryAlphaCode" memberName="alp" />
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="LaunchSettings">
-        <watch expression="msg.Substring(1, msg.Length-2)" language="C#" />
-        <watch expression="countriesList[1].currencies" language="C#" />
-        <watch expression="@country.currencies" language="Razor" />
-        <watch expression="regionDictionary" language="C#" />
-        <watch expression="RegionDictionary" language="C#" />
-        <watch expression="ViewBag.RegionDictionary" language="Razor" />
-        <watch expression="Model.RegionDictionary" language="Razor" />
-        <watch expression="countryRegion" language="Razor" />
-        <watch expression="ViewBag.getCountriesForRegion(country.region)" language="Razor" />
-        <watch expression="@ViewBag.getCountriesForRegion(country.region)" language="Razor" />
-        <watch expression="@HomeController.getCountriesForRegion(country.region)" language="Razor" />
+        <watch expression="alp" language="C#" />
+        <watch expression="alp[0]" language="C#" />
+        <watch expression="@String.Format(Strings.Replace(regionSubRegion, &quot; &quot;, &quot;&quot;) + country.alpha2Code)" language="Razor" />
       </configuration>
     </watches-manager>
   </component>
