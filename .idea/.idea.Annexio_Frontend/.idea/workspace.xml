@@ -8,8 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment=" * added todo for pagination">
-      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Dockerfile" afterDir="false" />
+    <list default="true" id="239db8f3-e7fd-45cd-a2a7-834c1194a11d" name="Changes" comment="* updated Dockerfile">
+      <change beforePath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Annexio_Frontend/Controllers/HomeController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654712761456</updated>
-      <workItem from="1654712784854" duration="47813000" />
+      <workItem from="1654712784854" duration="48336000" />
     </task>
     <task id="LOCAL-00001" summary="* added functionality to display data on table&#10;* added models for objects within response&#10;* added functionality for collapsible table elements">
       <created>1654783127737</created>
@@ -151,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654797744797</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="* updated Dockerfile">
+      <created>1654799823800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654799823800</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +183,8 @@
     <MESSAGE value="* updated controller to add internal jump to elements&#10;* added scrolling between objects in table" />
     <MESSAGE value="* added docker functionality&#10;* added search function on table&#10;* added pagination (needs to be revised)" />
     <MESSAGE value=" * added todo for pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value=" * added todo for pagination" />
+    <MESSAGE value="* updated Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="* updated Dockerfile" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

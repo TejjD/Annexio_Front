@@ -60,7 +60,7 @@ public class HomeController : Controller
 
     private static void GetCountries()
     {
-        var stringTask = Client.GetStringAsync("https://localhost:7040/Countries");
+        var stringTask = Client.GetStringAsync("http://3.16.24.144:8080/Countries");
 
         var msg = stringTask.Result;
 
