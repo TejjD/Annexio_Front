@@ -1,8 +1,178 @@
-﻿@{
+﻿@using Annexio_Assessment.Models;
+@using System.Collections.Specialized
+@using Annexio_Frontend.Controllers
+@using Microsoft.VisualBasic
+@using Newtonsoft.Json.Linq
+@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Countries List
+            </div>
+            <div class="panel-body">
+                <table class="table table-condensed table-striped">
+                    <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Region</th>
+                        <th>Subregion</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    @foreach (Country country in ViewBag.CountriesList)
+                    {
+                        <tr>
+                            <td data-toggle="collapse" data-target="#@country.alpha2Code" class="accordion-toggle">@country.name</td>
+                            <td data-toggle="collapse" data-target="#@String.Format(Strings.Replace(country.region, " ", "") + country.alpha2Code)" class="accordion-toggle">@country.region</td>
+                            <td data-toggle="collapse" data-target="#@String.Format(Strings.Replace(country.subregion, " ", "") + country.alpha2Code)" class="accordion-toggle">@country.subregion</td>
+                        </tr>
+                        <tr>
+                            <td colspan="12" class="hiddenRow">
+                                <div class="accordian-body collapse" id="@country.alpha2Code">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Country Name</th>
+                                            <th>Capital City</th>
+                                            <th>Population</th>
+                                            <th>Official Currencies</th>
+                                            <th>Languages</th>
+                                            <th>Neighboring countries</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>@country.name</td>
+                                            <td>@country.capital</td>
+                                            <td>@country.population</td>
+                                            <td>
+                                                @{
+                                                    if (@country.currencies != null)
+                                                    {
+                                                        foreach (var currency in @country.currencies)
+                                                        {
+                                                            @currency.name
+                                                            <br/>
+                                                        }
+                                                    }
+                                                }
+                                            </td>
+                                            <td>
+                                                @{
+                                                    if (@country.languages != null)
+                                                    {
+                                                        foreach (var language in @country.languages)
+                                                        {
+                                                            @language.name
+                                                            <br/>
+                                                        }
+                                                    }
+                                                }
+                                            </td>
+                                            <td>
+                                                @{
+                                                    if (@country.borders != null)
+                                                    {
+                                                        @foreach (var borders in @country.borders)
+                                                        {
+                                                            @borders
+                                                            <br/>
+                                                        }
+                                                    }
+                                                }
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="12" class="hiddenRow">
+                                <div class="accordian-body collapse" id="@String.Format(Strings.Replace(country.region, " ", "") + country.alpha2Code)">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Region Name</th>
+                                            <th>Population</th>
+                                            <th>Countries in Region</th>
+                                            <th>Subregions in Region</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>@country.region</td>
+                                            <td>@HomeController.GetRegionPopulation(country.region)</td>
+                                            <td>
+                                                @{
+                                                    foreach (var regionCountry in @HomeController.GetCountriesForRegion(country.region)!)
+                                                    {
+                                                        @regionCountry
+                                                        <br/>
+                                                    }
+                                                }
+                                            </td>
+                                            <td>
+                                                @{
+                                                    foreach (var regionSubRegion in @HomeController.GetSubRegionsForRegion(country.region)!)
+                                                    {
+                                                        @regionSubRegion
+                                                        <br/>
+                                                    }
+                                                }
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="12" class="hiddenRow">
+                                <div class="accordian-body collapse" id="@String.Format(Strings.Replace(country.subregion, " ", "") + country.alpha2Code)">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Subregion Name</th>
+                                            <th>Population</th>
+                                            <th>Region under</th>
+                                            <th>Countries within subregion</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>@country.subregion</td>
+                                            <td>@HomeController.GetSubRegionPopulation(country.subregion)</td>
+                                            <td>@country.region</td>
+                                            <td>
+                                                @{
+                                                    foreach (var subregionCountry in @HomeController.GetCountrySubRegionsForRegion(country.subregion)!)
+                                                    {
+                                                        @subregionCountry
+                                                        <br/>
+                                                    }
+                                                }
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>

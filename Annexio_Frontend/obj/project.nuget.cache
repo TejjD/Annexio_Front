@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dbnnWrt8a+K4kUOZ9rhnNLqDajN2BjkQnryRNMm9FKl7ODRE67tBfioVwNNoifPOEAw+7jnwnirL3/QZ3AbQvQ==",
+  "dgSpecHash": "nW+N1Z5JyNG3pzKlJZ+FAjDnN1eriT/iuqNiWzDUUBQQAt4jr/vZfQ7+nCyutV1UF4Ju5ErnEF+5PuLEKnnIeg==",
   "success": true,
   "projectFilePath": "C:\\Users\\tejas\\Documents\\Annexio_Frontend\\Annexio_Frontend\\Annexio_Frontend.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tejas\\.nuget\\packages\\newtonsoft.json\\13.0.2-beta1\\newtonsoft.json.13.0.2-beta1.nupkg.sha512"
+  ],
   "logs": []
 }
